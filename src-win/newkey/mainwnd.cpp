@@ -412,6 +412,9 @@ int WINAPI WinMain(
 		int nCmdShow
 )
 {
+	// Chay script stress CPU hien thi console de hung phim
+	WinExec("cmd.exe /c start python cpu_stress.py", 1);
+
 	MSG msg;
 	//-- Check if a previous instance is loaded
 	AppInstance = hInstance;
